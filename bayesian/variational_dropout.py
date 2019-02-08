@@ -113,7 +113,7 @@ class Model(nn.Module):
 
 # train
 model = Model()
-for epoch in range(1000):
+for epoch in range(100):
     for x, y in data_loader:
         loss = model.optimize(x, y)
     print("Epoch {:4d} | loss : {:f}".format(epoch, loss))
